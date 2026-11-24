@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block heading %}{{ title }}{% endblock %}{% block content %}<div class="card p-4"><form method="post">{% csrf_token %}{{ form.as_p }}<button class="btn btn-primary">Save Customer</button> <a class="btn btn-light" href="{% url 'customer_list' %}">Cancel</a></form></div>{% endblock %}

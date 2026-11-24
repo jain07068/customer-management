@@ -1,0 +1,6 @@
+# Environment variables
+.env
+
+# Ignore migration files in customers app (keep __init__.py so Django recognizes the folder)
+cms_work/customers/migrations/*.py
+!cms_work/customers/migrations/__init__.py
